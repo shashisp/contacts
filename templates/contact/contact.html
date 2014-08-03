@@ -1,0 +1,17 @@
+
+{% extends "base.html" %}
+{% load gravatar %}
+
+{% block content %}
+
+
+
+ {% gravatar object.email 150 %}
+ <p> <h1> {{ object.name }} </h1> <br/>
+
+ 
+ <b>Email id  :</b> {{ object.email }} <br/>
+ <b>Contact No :</b> {{ object.phone }}<br/>
+</p>
+
+{% endblock %}
